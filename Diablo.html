@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIABLO - Accueil</title>
+<style>
+        /* Réinitialisation de base */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #050a12;
+            color: #ffffff;
+            overflow-x: hidden;
+        }
+
+        /* Barre de navigation */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 5%;
+            position: absolute;
+            width: 100%;
+            z-index: 10;
+            background: linear-gradient(to bottom, rgba(5, 10, 18, 0.8), transparent);
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: 900;
+            letter-spacing: 3px;
+            color: #00d2ff;
+            text-shadow: 0 0 10px rgba(0, 210, 255, 0.5);
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin-left: 30px;
+        }
+
+        nav ul li a {
+            color: #a0aec0;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #00d2ff;
+        }
+
+        /* Section Héro (Accueil) */
+        .hero {
+            position: relative;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 0 20px;
+            /* Remplacer 'diablo-core.jpg' par le nom exact de votre image */
+            background: linear-gradient(rgba(5, 10, 18, 0.6), rgba(5, 10, 18, 0.9)), 
+                        url('Structure_gomtrique_flottante_noir_et_bleu_aux_lignes_fluide.jpg') no-repeat center center/cover;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            z-index: 2;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            font-weight: 800;
+            margin-bottom: 20px;
+            letter-spacing: 5px;
+            text-transform: uppercase;
+            background: linear-gradient(45deg, #ffffff, #00d2ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: #cbd5e0;
+            margin-bottom: 40px;
+            line-height: 1.6;
+        }
+
+        /* Bouton au style futuriste */
+        .btn-enter {
+            display: inline-block;
+            padding: 15px 40px;
+            font-size: 1rem;
+            font-weight: bold;
+            color: #050a12;
+            background-color: #00d2ff;
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            border-radius: 5px;
+            box-shadow: 0 0 20px rgba(0, 210, 255, 0.4);
+            transition: all 0.3s ease;
+        }
+
+        .btn-enter:hover {
+            background-color: #ffffff;
+            box-shadow: 0 0 30px rgba(255, 255, 255, 0.6);
+            transform: translateY(-3px);
+        }
+
+        /* Animation subtile pour le titre */
+        @keyframes pulse {
+            0% { opacity: 0.9; }
+            50% { opacity: 1; }
+            100% { opacity: 0.9; }
+        }
+
+        .hero-content {
+            animation: pulse 4s infinite ease-in-out;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">DIABLO</div>
+        <nav>
+            <ul>
+                <li><a href="Accueil.html">Accueil</a></li>
+                <li><a href="A propos de moi.html">A props de moi</a></li>
+                <li><a href="établissement d'origine.html">établissemnent d'origine</a></li>
+                <li><a href="Ma ville natale.html">Ma ville natale</a></li>
+                <li><a href="audio préférer.html">audio préférer</a></li>
+                <li><a href="Mes images préférer.html">Mes images préferer</a></li>
+                <li><a href="Mes vidéos.html">Mes vidéos</a></li>
+                <li><a href="Mon CV.html">Mon CV</a></li>
+                <li><a href="Jeux.html">Jeux</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Bienvenue</h1>
+            <p>Plongez dans l'univers technologique et fluide de DIABLO. Une expérience visuelle et interactive conçue pour repousser les limites du design moderne.</p>
+        </div>
+    </section>
+
+</body>
+</html>
